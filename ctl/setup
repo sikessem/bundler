@@ -1,4 +1,7 @@
 #!/usr/bin/env php
 <?php
+use SIKessEm\Setup\Program;
+
 require_once dirname(__DIR__) . '/pkg/autoload.php';
-echo 'Setup your PHP App' . PHP_EOL;
+
+(new Program(getcwd()))->execute($argc, $argv);
