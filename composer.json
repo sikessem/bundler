@@ -1,0 +1,37 @@
+{
+    "name": "sikessem/setup",
+    "type": "project",
+    "description": "Setup PHP App",
+    "license": "Apache-2.0",
+    "keywords": [
+        "setup",
+        "sikessem"
+    ],
+    "authors": [{
+        "homepage": "https://dev.sikessem.com",
+        "name": "SIGUI Kessé Emmanuel",
+        "email": "developer@sikessem.com",
+        "role": "Developer"
+    }],
+    "support": {
+        "source": "https://github.com/SIKessEm/Setup",
+        "issues": "https://github.com/SIKessEm/Setup/issues"
+    },
+    "require": {
+        "php": ">=8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "SIKessEm\\Setup\\": "src/"
+        }
+    },
+    "homepage": "https://github.com/SIKessEm/Setup#readme",
+    "config": {
+        "vendor-dir": "pkg",
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "bin": "ctl/setup",
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
