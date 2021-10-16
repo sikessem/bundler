@@ -13,7 +13,7 @@ class Program {
                     break;
                 
                 default:
-                    fprintf(STDERR, 'Unknow command: %s' . PHP_EOL, implode(' ', $argv));
+                    fprintf(STDERR, 'Unknown command: %s' . PHP_EOL, implode(' ', $argv));
                     exit(1);
             }
 
