@@ -10,6 +10,8 @@ class Program {
             switch ($argv[1]) {
                 case '-c':
                     fprintf(STDOUT, 'We are going to compile file from %s' . PHP_EOL, $this->wdir);
+                    $compiler = new Compiler($this->wdir);
+                    $compiler->compile($argv[2] ?? '', $argv [3] ?? '');
                     break;
                 
                 default:
