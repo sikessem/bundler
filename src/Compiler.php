@@ -73,8 +73,8 @@ class Compiler {
                         $previous->isNotArray() ||
                         $next->isNotArray()
                     ) || (
-                        $previous->in(T_DOUBLE_ARROW, '??=' , '??', '?:', '?') ||
-                        $next->is(T_DOUBLE_ARROW, '??=', '??', '?:', '?')
+                        $previous->in(T_DOUBLE_ARROW, T_SL, T_SR, T_SL_EQUAL, T_SR_EQUAL, T_OR_EQUAL, T_AND_EQUAL, '&&=', '||=', '??=' , '??', '?:', '?', '+=', '.=', '-=', '*=', '|=', '&=', '%=') ||
+                        $next->in(T_DOUBLE_ARROW, T_SL, T_SR, T_SL_EQUAL, T_SR_EQUAL, T_OR_EQUAL, T_AND_EQUAL, '&&=', '||=', '??=' , '??', '?:', '?', '+=', '.=', '-=', '*=', '|=', '&=', '%=')
                     ) ||(
                         $previous->in(T_WHITESPACE, T_COMMENT, T_DOC_COMMENT) ||
                         $next->in(T_WHITESPACE, T_COMMENT, T_DOC_COMMENT)
@@ -85,8 +85,7 @@ class Compiler {
                 ) $output .= '';
                 else {
                     $space = $token->getContent();
-                    $space = preg_replace('/[ \t]+/', ' ', $space);
-                    $space = preg_replace('/[\r\n]+/', ' ', $space);
+                    $space = preg_replace('/\s+/s', ' ', $space);
                     $output .= $space;
                 }
             }
