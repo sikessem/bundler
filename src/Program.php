@@ -13,6 +13,10 @@ class Program {
                     $compiler = new Compiler($this->wdir);
                     $compiler->compile($argv[2] ?? '', $argv [3] ?? '');
                     break;
+
+                case '-o':
+                    fprintf(STDOUT, 'We are going to create archive from %s' . PHP_EOL, $this->wdir);
+                    break;
                 
                 default:
                     fprintf(STDERR, 'Unknown command: %s' . PHP_EOL, implode(' ', $argv));
