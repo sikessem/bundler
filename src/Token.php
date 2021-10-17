@@ -1,6 +1,6 @@
 <?php
 
-namespace SIKessEm\Setup;
+namespace Phapp;
 
 class Token {
     public function __construct(null|string|array $value = null) {

@@ -1,6 +1,6 @@
 <?php
 
-namespace SIKessEm\Setup;
+namespace Phapp;
 
 class Program {
     public function __construct(protected string $wdir) {}

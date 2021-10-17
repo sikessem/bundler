@@ -1,6 +1,6 @@
 #!/usr/bin/env php
 <?php
-use SIKessEm\Setup\Program;
+use Phapp\Program;
 
 require_once dirname(__DIR__) . '/pkg/autoload.php';
 

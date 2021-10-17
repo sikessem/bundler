@@ -1,10 +1,14 @@
 {
-    "name": "sikessem/setup",
+    "name": "phapp/setup",
     "type": "project",
-    "description": "Setup PHP App",
+    "description": "PHP App setup",
     "license": "Apache-2.0",
     "keywords": [
+        "phapp",
+        "phar",
         "setup",
+        "compiler",
+        "archiver",
         "sikessem"
     ],
     "authors": [{
@@ -14,24 +18,24 @@
         "role": "Developer"
     }],
     "support": {
-        "source": "https://github.com/SIKessEm/Setup",
-        "issues": "https://github.com/SIKessEm/Setup/issues"
+        "source": "https://github.com/SIKessEm/Phapp",
+        "issues": "https://github.com/SIKessEm/Phapp/issues"
     },
     "require": {
         "php": ">=8.0"
     },
     "autoload": {
         "psr-4": {
-            "SIKessEm\\Setup\\": "src/"
+            "Phapp\\": "src/"
         }
     },
-    "homepage": "https://github.com/SIKessEm/Setup#readme",
+    "homepage": "https://github.com/SIKessEm/Phapp#readme",
     "config": {
         "vendor-dir": "pkg",
         "preferred-install": "dist",
         "sort-packages": true
     },
-    "bin": "ctl/setup",
+    "bin": "ctl/phapp",
     "minimum-stability": "dev",
     "prefer-stable": true
 }
