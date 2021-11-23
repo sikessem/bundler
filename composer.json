@@ -1,15 +1,12 @@
 {
-    "name": "phapp/setup",
+    "name": "phapp/phapp",
     "type": "project",
-    "description": "PHP App setup",
+    "description": "The PHP Application for Webmasters",
     "license": "Apache-2.0",
     "keywords": [
         "phapp",
-        "phar",
-        "setup",
-        "compiler",
-        "archiver",
-        "sikessem"
+        "framework",
+        "application"
     ],
     "authors": [{
         "homepage": "https://dev.sikessem.com",
@@ -22,11 +19,11 @@
         "issues": "https://github.com/SIKessEm/Phapp/issues"
     },
     "require": {
-        "php": ">=8.0"
+        "php": "^8.0"
     },
     "autoload": {
         "psr-4": {
-            "Phapp\\": "src/"
+            "Phapp\\": "src/main/"
         }
     },
     "homepage": "https://github.com/SIKessEm/Phapp#readme",
